@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMQTT.Views.PageMain">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame>
+                <StackLayout>
+                    <Label Text="Led 1" HorizontalTextAlignment="Center"
+                   FontSize="Title"/>
+                    <ImageButton x:Name="btnPrender1" Clicked="btnPrender1_Clicked"
+                                 IsEnabled="False" IsVisible="False"
+                         Source="lampPrendido.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                    <ImageButton x:Name="btnApagar1" Clicked="btnApagar1_Clicked"
+                         Source="lampApagado.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame>
+                <StackLayout>
+                    <Label Text="Led 2" HorizontalTextAlignment="Center"
+                   FontSize="Title"/>
+                    <ImageButton x:Name="btnPrender2" Clicked="btnPrender2_Clicked"
+                                 IsEnabled="False" IsVisible="False"
+                         Source="lampPrendido.png"
+                          HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                    <ImageButton x:Name="btnApagar2" Clicked="btnApagar2_Clicked"
+                         Source="lampApagado.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame>
+                <StackLayout>
+                    <Label Text="Led 3" HorizontalTextAlignment="Center"
+                   FontSize="Title"/>
+                    <ImageButton x:Name="btnPrender3" Clicked="btnPrender3_Clicked"
+                                 IsEnabled="False" IsVisible="False"
+                         Source="lampPrendido.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                    <ImageButton x:Name="btnApagar3" Clicked="btnApagar3_Clicked"
+                         Source="lampApagado.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame>
+                <StackLayout>
+                    <Label Text="Led 4" HorizontalTextAlignment="Center"
+                   FontSize="Title"/>
+                    <ImageButton x:Name="btnPrender4" Clicked="btnPrender4_Clicked"
+                                 IsEnabled="False" IsVisible="False"
+                         Source="lampPrendido.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                    <ImageButton x:Name="btnApagar4" Clicked="btnApagar4_Clicked"
+                         Source="lampApagado.png"
+                         HeightRequest="90"
+                         BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

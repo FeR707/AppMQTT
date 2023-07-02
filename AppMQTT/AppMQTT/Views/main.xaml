@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMQTT.Views.main">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+                <Label Text="MQTT" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Grid.ColumnSpan="3" Text="Led" Grid.Column="0" Grid.Row="1" HorizontalOptions="Center"/>
+            <Button x:Name="btnEncenderLed" BackgroundColor="Green" TextColor="White" Text="Encender" Grid.Row="2" Grid.Column="0" Clicked="btnEncenderLed_Clicked"/>
+            <Button x:Name="btnApagarLed" BackgroundColor="Red" TextColor="White" Text="Apagar"  Grid.Row="2" Grid.Column="1" Clicked="btnApagarLed_Clicked" />
+            <Label x:Name="lblLed"  Grid.Row="2" Grid.Column="2"/>
+            <Label Grid.ColumnSpan="3" Text="Foco" Grid.Column="0" Grid.Row="3" HorizontalOptions="Center"/>
+            <Button x:Name="btnEncenderRelevador" BackgroundColor="Green" TextColor="White" Text="Encender"  Grid.Row="4" Grid.Column="0" Clicked="btnEncenderRelevador_Clicked"/>
+            <Button x:Name="btnApagarRelevador" BackgroundColor="Red" TextColor="White" Text="Apagar"  Grid.Row="4" Grid.Column="1" Clicked="btnApagarRelevador_Clicked"/>
+            <Label x:Name="lblRele"  Grid.Row="4" Grid.Column="2"/>
+            <Label Grid.ColumnSpan="3" Text="Cantidad de Luz" Grid.Column="0" Grid.Row="5" HorizontalOptions="Center"/>
+            <Button x:Name="btnActualizarLDR" BackgroundColor="Green" TextColor="White" Text="Obtener cantidad de luz"  Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Clicked="btnActualizarLDR_Clicked"/>
+            <Label x:Name="lblLDR"  Grid.Row="6" Grid.Column="2"/>
+            <ListView x:Name="lstRecibidos" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
